@@ -128,19 +128,15 @@ body {
 
     height: 20px;
 
-    background-color: #18212D;
-    border: 1px solid #1C2431;
-
     font-weight: 500;
-    font-size: 11px;
+    font-size: 13px;
 
-    color: #637d9f;
+    color: #bdc8e0;
     cursor: pointer;
     text-decoration: none;
 }
 
 .header-content__item img {
-    width: 14px;
     height: 14px;
 }
 
@@ -296,7 +292,7 @@ body {
 
 .game-welcome__heading {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 28px;
     letter-spacing: 0.02em;
     text-transform: uppercase;
@@ -333,8 +329,8 @@ body {
     position: absolute;
     right: -15px;
     top: -15px;
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
 
     background: linear-gradient(141.63deg, #FF0909 -3.72%, #FA540C 105.23%);
     border-radius: 18px;
@@ -372,11 +368,11 @@ body {
     width: 100%;
     margin-top: 16px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .game-navigation__avatar img {
-    width: 226px;
+    max-height: 230px;
     object-fit: contain;
     border: 1px solid #1E3245;
     border-radius: 8px;
@@ -385,7 +381,7 @@ body {
 .game-navigation__column {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 10px;
 }
 
 .game-navigation__item {
@@ -400,7 +396,7 @@ body {
 .game-navigation__item img {
     width: 56px;
     height: 56px;
-    border: 1px solid #1E3245;
+    border: 1px solid #2c79c3;
     border-radius: 8px;
 }
 
