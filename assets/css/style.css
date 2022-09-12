@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6 {
 :root {
     --orange-gradient: linear-gradient(141.63deg, #FF0909 -3.72%, #FF7B43 105.23%);
     --blue-gradient: linear-gradient(141.63deg, #0DA6FF -3.72%, rgba(107, 43, 255, 0.65) 105.23%);
-    --app-width: 428px;
+    --app-width: 480px;
 }
 
 @media (max-width: 428px) {
@@ -116,7 +116,6 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    padding: 0px;
     gap: 4px;
 }
 
@@ -124,7 +123,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4px 8px;
+    padding: 4px 4px;
     gap: 5px;
 
     height: 20px;
@@ -132,9 +131,8 @@ body {
     background-color: #18212D;
     border: 1px solid #1C2431;
 
-    font-weight: 300;
+    font-weight: 400;
     font-size: 11px;
-    line-height: 13px;
 
     color: #5F738D;
     cursor: pointer;
@@ -161,7 +159,7 @@ body {
 
     width: var(--app-width);
     background-color: #0B121D;
-    box-shadow: 0px -10px 50px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 -10px 50px rgba(0, 0, 0, 0.35);
 
     display: flex;
     padding: 8px 10px 8px;
