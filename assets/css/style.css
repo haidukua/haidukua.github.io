@@ -123,18 +123,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4px 4px;
-    gap: 5px;
+    padding: 3px 3px;
+    gap: 3px;
 
     height: 20px;
 
     background-color: #18212D;
     border: 1px solid #1C2431;
 
-    font-weight: 400;
+    font-weight: 500;
     font-size: 11px;
 
-    color: #5F738D;
+    color: #637d9f;
     cursor: pointer;
     text-decoration: none;
 }
