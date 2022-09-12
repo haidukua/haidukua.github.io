@@ -348,7 +348,6 @@ body {
 /* Game navigation settings */
 .game-navigation {
     margin-top: 60px;
-    padding: 0 15px;
 }
 
 .game-navigation__nickname {
@@ -367,13 +366,16 @@ body {
     margin-top: 16px;
     display: flex;
     justify-content: center;
+    gap: 10px;
+    align-items: center;
 }
 
 .game-navigation__avatar img {
-    max-height: 230px;
+    max-height: 330px;
     object-fit: contain;
     border: 1px solid #1E3245;
     border-radius: 8px;
+    width: 100%;
 }
 
 .game-navigation__column {
