@@ -32,7 +32,6 @@ body {
     margin: 30px auto;
     max-width: var(--app-width);
     width: 100%;
-    min-height: calc(100vh);
 
     background-color: #161E29;
     border-radius: 20px;
@@ -41,13 +40,12 @@ body {
 }
 
 .game-container__background {
-    position: relative;
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
 
-    /*filter: contrast(100%) saturate(0%) brightness(70%);*/
+    filter: contrast(100%) saturate(0%) brightness(70%);
 }
 
 .game-container__background img {
