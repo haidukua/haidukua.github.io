@@ -80,13 +80,13 @@ body {
 .game-content {
     position: relative;
     z-index: 100;
-    min-height: calc(100vh - 60px);
+    min-height: calc(100vh - 110px);
 }
 
 .game-wrapper {
-    padding: 0 10px 100px;
+    padding: 0 10px;
 
-    margin-top: 70px;
+    margin-top: 45px;
 }
 
 /* Header settings */
@@ -347,7 +347,7 @@ body {
 
 /* Game navigation settings */
 .game-navigation {
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .game-navigation__nickname {
@@ -416,7 +416,7 @@ body {
 }
 
 .price-content {
-    margin-top: 120px;
+    margin-top: 20px;
     padding: 0 5px;
 }
 
