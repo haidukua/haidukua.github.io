@@ -1,0 +1,27 @@
+.fill-gradient__orange {
+    background: var(--orange-gradient);
+}
+
+.fill-gradient__blue {
+    background: var(--blue-gradient);
+}
+
+.stroke-gradient__orange {
+    position: relative;
+    background: var(--orange-gradient);
+    z-index: 1;
+}
+
+.stroke-gradient__orange::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    border-radius: 6px;
+
+    background-color: #1A242E;
+    z-index: -1;
+}
+
+.text-color__blue {
+    color: #1A81FA;
+}
