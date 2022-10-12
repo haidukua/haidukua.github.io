@@ -1,15 +1,1246 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en"><head>
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vite App</title>
-    <script type="module" crossorigin src="/assets/index.5ffb6ca2.js"></script>
-    <link rel="stylesheet" href="/assets/index.ac34c7da.css">
-  </head>
-  <body>
-    <div id="app"></div>
-    
-  </body>
-</html>
+  <style type="text/css">
+.icon[data-v-48a13218] {
+  height: 14px;
+  width: 14px;
+}
+.header[data-v-48a13218] {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  display: flex;
+
+  width: 100%;
+  max-width: var(--app-max-width);
+  background-color: #131A24;
+  border-bottom: 1px solid #1C2431;
+
+  justify-content: center;
+  padding: 2px 0;
+}
+.header-content[data-v-48a13218] {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.header-content__item[data-v-48a13218] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 3px;
+  gap: 3px;
+
+  color: #8391af;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 13px;
+}
+</style><style type="text/css">
+.icon[data-v-6704560a] {
+  height: 100%;
+  width: 100%;
+}
+.footer[data-v-6704560a] {
+  position: fixed;
+  bottom: 0;
+
+  width: 100%;
+  max-width: var(--app-max-width);
+  background-color: #0B121D;
+  box-shadow: 0 -10px 50px rgba(0, 0, 0, 0.35);
+
+  display: flex;
+  padding: 4px 10px 4px;
+  z-index: 999;
+}
+.footer-content[data-v-6704560a] {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.footer-content__item[data-v-6704560a] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.footer-content__item__icon[data-v-6704560a] {
+  width: 30px;
+  height: 30px;
+
+  background-color: #18212D;
+  border: 1px solid #1C2431;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-content__item__label[data-v-6704560a] {
+  font-size: 11px;
+  color: #8391af;
+  margin-top: 3px;
+}
+</style><style type="text/css">
+.home-header[data-v-c808bbb9] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 25px;
+  padding: 0 15px;
+  width: 100%;
+}
+.game-welcome__heading[data-v-c808bbb9] {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  color: #D9D9D9;
+}
+.game-welcome__subheading[data-v-c808bbb9] {
+  font-size: 14px;
+  line-height: 14px;
+  margin-top: 3px;
+
+  background: linear-gradient(141.63deg, #FF0909 -3.72%, #FA540C 105.23%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.game-welcome__quests[data-v-c808bbb9] {
+  position: relative;
+}
+.game-welcome__quests_icon[data-v-c808bbb9] {
+  display: block;
+  width: 40px;
+  height: 40px;
+
+  border: 1px solid #1E3245;
+  border-radius: 4px;
+}
+</style><style type="text/css">
+.main-menu__nickname[data-v-0abd89e9] {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+
+  letter-spacing: 0.02em;
+
+  color: #D9D9D9;
+  text-align: center;
+}
+.main-menu__container[data-v-0abd89e9] {
+  width: 100%;
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+.main-menu__avatar img[data-v-0abd89e9] {
+  max-height: 330px;
+  object-fit: contain;
+  border: 1px solid #1E3245;
+  border-radius: 8px;
+  width: 100%;
+}
+.main-menu__column[data-v-0abd89e9] {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main-menu__item[data-v-0abd89e9] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.main-menu__item__icon[data-v-0abd89e9] {
+  width: 56px;
+  height: 56px;
+  border: 1px solid #2c79c3;
+  border-radius: 8px;
+}
+.main-menu__item-title[data-v-0abd89e9] {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+
+  color: #8B94B5;
+  margin-top: 5px;
+  transition: .25s;
+}
+.main-menu__item:hover .main-menu__item-title[data-v-0abd89e9] {
+  color: #FFFFFF;
+}
+</style><style type="text/css">
+.profile-avatar__container[data-v-efc183d3] {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.profile__avatar[data-v-efc183d3] {
+  width: 189px;
+  max-width: 285px;
+
+  overflow: hidden;
+}
+.profile__avatar img[data-v-efc183d3] {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid #1E3245;
+  border-radius: 8px;
+}
+</style><style type="text/css">
+.profile-items[data-v-01393d74] {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.profile-items__container[data-v-01393d74] {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 0;
+  align-items: center;
+  justify-content: center;
+}
+.profile-items__item[data-v-01393d74] {
+  position: relative;
+  flex: 1 1 5px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-items__row[data-v-01393d74] {
+  gap: 15px;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.profile-items__item__icon[data-v-01393d74] {
+  width: 50px;
+  height: 50px;
+
+  border: 1px solid #7fb365c9;
+  border-radius: 8px;
+}
+.profile__item__counter[data-v-01393d74] {
+  right: -10px;
+  top: -10px;
+}
+</style><style type="text/css">
+.characteristic__item[data-v-0970043c] {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 8px;
+}
+.characteristic__item__icon[data-v-0970043c] {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+
+  margin-right: 16px;
+}
+.characteristic__item-content[data-v-0970043c] {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+
+  color: #5F738D;
+}
+.characteristic__item-value[data-v-0970043c] {
+  margin-left: 5px;
+  color: #FFFFFF;
+}
+</style><style type="text/css">
+.nav-link[data-v-ec84e734] {
+  width: 100%;
+  text-decoration: none;
+
+  background: #1A242E;
+  border: 1px solid #39386c;
+  border-radius: 8px;
+
+  margin-bottom: 8px;
+
+  display: flex;
+
+  align-items: center;
+  padding: 0 16px;
+  height: 50px;
+}
+.nav-link__icon[data-v-ec84e734] {
+  display: flex;
+  flex-shrink: 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+
+  margin-right: 15px;
+}
+.nav-link__text[data-v-ec84e734] {
+  font-size: 14px;
+
+  letter-spacing: 0.02em;
+
+  color: #D9D9D9;
+}
+</style><style type="text/css">
+.shop-card[data-v-b8b26d1b] {
+  min-height: 100px;
+}
+.shop-card__icon[data-v-b8b26d1b] {
+  width: 63px;
+  height: 63px;
+  display: flex;
+  flex-shrink: 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border: 1px solid #7e6b36;
+  border-radius: 8px;
+}
+.shop-card__details[data-v-b8b26d1b] {
+  margin-left: 20px;
+}
+.shop-card__title[data-v-b8b26d1b] {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #D9D9D9;
+}
+.shop-card__description[data-v-b8b26d1b] {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.02em;
+  color: #8B94B5;
+  margin-top: 5px;
+}
+</style><style type="text/css">
+.dialog-card__image[data-v-16fcdbbf] {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  flex-shrink: 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-radius: 4px;
+  border: 1px solid #c45b5b;
+}
+.dialog-card__details[data-v-16fcdbbf] {
+  margin-left: 16px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dialog-card__title-content[data-v-16fcdbbf] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dialog-card__title[data-v-16fcdbbf] {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #D9D9D9;
+}
+.dialog-card__date[data-v-16fcdbbf] {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 14px;
+  color: #8B94B5;
+}
+.dialog-card.unread .dialog-card__description[data-v-16fcdbbf] {
+  color: #D9D9D9;
+}
+.dialog-card__description[data-v-16fcdbbf] {
+  font-size: 13px;
+  margin-top: 8px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.02em;
+  color: #8B94B5;
+}
+</style><style type="text/css">
+.modal__backdrop[data-v-537b826a] {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        inset: 0;
+        background-color: #000000a7;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+}
+.modal[data-v-537b826a] {
+        background: linear-gradient(180deg, #1A242E 0%, #354250 100%);
+        border: 2px solid #354250;
+        border-radius: 8px;
+        max-width: 310px;
+        width: 100%;
+        padding: 20px;
+        position: relative;
+}
+.modal__title[data-v-537b826a] {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+
+        letter-spacing: 0.02em;
+
+        color: #8B94B5;
+        margin: 0;
+        text-align: center;
+}
+.modal__header[data-v-537b826a] {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+}
+.modal__header button[data-v-537b826a] {
+        position: absolute;
+        top: 15px;
+        right: 5px;
+        background: none;
+        outline: none;
+        border: none;
+        cursor: pointer;
+}
+.modal__content[data-v-537b826a] {
+        font-size: 16px;
+        color: #aeaeae;
+        margin-top: 15px;
+}
+.modal__button-container[data-v-537b826a] {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 70px;
+}
+.modal__button-container button[data-v-537b826a] {
+        outline: none;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        height: 45px;
+        color: white;
+        border-radius: 8px;
+}
+</style><style type="text/css">
+.pagination[data-v-cccf29d6] {
+        width: 100%;
+        height: 45px;
+        display: flex;
+        gap: 15px;
+        justify-content: center;     
+        margin-bottom: 50px;
+}
+.pagination__button[data-v-cccf29d6] {
+        width: 45px;
+        background: none;
+        outline: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        border: 2px solid #1E3245;
+        border-radius: 8px;
+        background-color: #1A242E;
+
+        font-size: 12px;
+        transition: .25s;
+}
+.pagination__prev-button[data-v-cccf29d6] {
+        color: #ffffff44;
+}
+.pagination__prev-button[data-v-cccf29d6]:hover {
+        color: white;
+        border: 2px solid #FF0909;
+}
+.pagination__active-button[data-v-cccf29d6] {
+        font-size: 15px;
+        font-weight: 500;
+        background: var(--orange-gradient);
+        border: none;
+}
+.pagination__next-button[data-v-cccf29d6]:hover {
+        background: #FF0909;
+}
+.pagination__next-button[data-v-cccf29d6] {
+        border-radius: 8px;
+        background-color: #18212D;
+
+        border: none;
+
+        position: relative;
+        background: var(--orange-gradient);
+        z-index: 1;
+}
+.pagination__next-button[data-v-cccf29d6]::after {
+        content: "";
+        position: absolute;
+        inset: 2px;
+        border-radius: 6px;
+        background-color: #1A242E;
+        z-index: -1;
+}
+</style><style type="text/css">
+.app-heading[data-v-faf9ed17] {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+.app-heading__container[data-v-faf9ed17] {
+        display: flex;
+        align-items: center;
+}
+.app-heading__btn[data-v-faf9ed17] {
+        outline: none;
+        background: none;
+        border: none;
+
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.app-heading__btn img[data-v-faf9ed17] {
+        width: 20px;
+}
+.app-heading__title[data-v-faf9ed17] {
+        font-size: 18px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        margin: 0;
+        color: #D9D9D9;
+}
+.app-heading__back-btn[data-v-faf9ed17] {
+        margin-right: 20px;
+}
+.app-heading__reload-btn img[data-v-faf9ed17] {
+        margin-bottom: 2px;
+}
+</style><style type="text/css">
+.header-separator[data-v-f9a28ae1] {
+        width: 100%;
+        height: 30px;
+        position: relative;
+        margin-bottom: 10px;
+}
+.header-separator__container[data-v-f9a28ae1] {
+        position: absolute;
+        inset: 0;
+        left: -10px;
+        right: -10px;
+        background-color: #212c36cd;
+        border-bottom: 2px solid #1E3245;
+        border-top: 2px solid #1E3245;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.header-separator__label[data-v-f9a28ae1] {
+        margin: 0;
+        text-align: center;
+
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        /* identical to box height */
+
+        letter-spacing: 0.01em;
+
+        color: #8B94B5;
+}
+</style><style type="text/css">
+.game[data-v-7a7a37b1] {
+  margin: 0 auto;
+  width: 100%;
+  max-width: var(--app-max-width);
+  background-color: #161E29;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4), 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+.background[data-v-7a7a37b1] {
+  content: ' ';
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  background-image: url('/src/assets/images/background.png');
+  background-repeat: no-repeat;
+  background-position: 70% 0;
+  background-size: cover;
+  filter: contrast(100%) saturate(0%) brightness(70%);
+}
+.content[data-v-7a7a37b1] {
+  position: relative;
+}
+.wrapper[data-v-7a7a37b1] {
+  padding: 55px 10px;
+  min-height: 100vh;
+}
+</style><style type="text/css">/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Rubik'), url('https://fonts.cdnfonts.com/s/15684/Rubik-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Rubik'), url('https://fonts.cdnfonts.com/s/15684/Rubik-Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Rubik'), url('https://fonts.cdnfonts.com/s/15684/Rubik-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 300;
+    src: local('Rubik'), url('https://fonts.cdnfonts.com/s/15684/Rubik-LightItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Rubik'), url('https://fonts.cdnfonts.com/s/15684/Rubik-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 500;
+    src: local('Rubik'), url('https://fonts.cdnfonts.com/s/15684/Rubik-MediumItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Rubik'), url('https://fonts.cdnfonts.com/s/15684/Rubik-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Rubik'), url('https://fonts.cdnfonts.com/s/15684/Rubik-BoldItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Rubik'), url('https://fonts.cdnfonts.com/s/15684/Rubik-Black.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 900;
+    src: local('Rubik'), url('https://fonts.cdnfonts.com/s/15684/Rubik-BlackItalic.woff') format('woff');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --app-sm-width: 280px;
+  --app-md-width: 315px;
+  --app-max-width: 428px;
+  --orange-gradient: linear-gradient(141.63deg, #FF0909 -3.72%, #FF7B43 105.23%);
+  --blue-gradient: linear-gradient(141.63deg, #0DA6FF -3.72%, rgba(107, 43, 255, 0.65) 105.23%);
+  --grey-gradient: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+body {
+  background-color: #3B3E47;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+textarea {
+  background-color: #1A242E;
+  border: 1px solid #1E3245;
+  border-radius: 8px;
+  color: #c3cdd5;
+  height: 80px;
+  padding: 10px;
+  outline: none;
+  width: 100%;
+}
+
+textarea::placeholder {
+  font-weight: 300;
+  font-size: 13px;
+  color: #8B94B5;
+}
+
+textarea:focus {
+  border: 1px solid #517098;
+}
+
+input {
+  background-color: #1A242E;
+  border: 1px solid #1E3245;
+  border-radius: 4px;
+  color: #c3cdd5;
+  padding: 10px;
+  outline: none;
+}
+
+input::placeholder {
+  font-weight: 300;
+  font-size: 13px;
+  color: #8B94B5;
+}
+
+input:focus {
+  border: 1px solid #517098;
+}
+
+label {
+  color: #d9d9d9;
+  font-size: 13px;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 315px) {
+    .d-sm-none {
+        display: none !important;
+    }
+}
+
+.mt5 {
+    margin-top: 25px;
+}
+
+.icon-star {
+    background-image: url(/src/assets/images/icons/star.png);
+}
+
+.icon-heart {
+    background-image: url(/src/assets/images/icons/heart.png);
+}
+
+.icon-pet {
+    background-image: url(/src/assets/images/icons/pet.png);
+}
+
+.icon-silver {
+    background-image: url(/src/assets/images/icons/silver.png);
+}
+
+.icon-crystals {
+    background-image: url(/src/assets/images/icons/crystals.png);
+}
+
+.icon-gold {
+    background-image: url(/src/assets/images/icons/gold.png);
+}
+
+.icon-gold {
+    background-image: url(/src/assets/images/icons/gold.png);
+}
+
+.icon-energy {
+    background-image: url(/src/assets/images/icons/energy.png);
+}
+
+.icon-home {
+    background-image: url(/src/assets/images/icons/home.png);
+}
+
+.icon-hero {
+    background-image: url(/src/assets/images/icons/hero.png);
+}
+
+.icon-clan {
+    background-image: url(/src/assets/images/icons/clan.png);
+}
+
+.icon-forum {
+    background-image: url(/src/assets/images/icons/forum.png);
+}
+
+.icon-chat {
+    background-image: url(/src/assets/images/icons/chat.png);
+}
+
+.icon-settings {
+    background-image: url(/src/assets/images/icons/settings.png);
+}
+
+.icon {
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 128px;
+  width: 128px;
+}
+
+.icon__counter {
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  width: 24px;
+  height: 24px;
+
+  background: var(--orange-gradient);
+  border-radius: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 14px;
+
+  color: #FFFFFF;
+}
+
+.card {
+  width: 100%;
+  background: #1A242E;
+  /*border: 1px solid #1E3245;*/
+  border: 1px solid #3E444F;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: flex-start;
+  padding: 16px;
+}
+
+.button {
+  padding: 8px 18px;
+  font-size: 13px;
+  background: #1A242E;
+  border: 1px solid #1E3245;
+  border-radius: 6px;
+  outline: none;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.button-orange {
+  background: var(--orange-gradient);
+}
+
+.button-blue {
+  background: var(--blue-gradient);
+}
+
+.button-grey {
+  background: var(--grey-gradient);
+}
+</style><style>[_nghost-yom-c50]{font-family:Open Sans,sans-serif;color:#121212}</style></head>
+  <body data-new-gr-c-s-check-loaded="14.1083.0" data-gr-ext-installed="" data-new-gr-c-s-loaded="14.1083.0">
+    <div id="app" data-v-app=""><div class="background" data-v-7a7a37b1=""></div><div class="game" data-v-7a7a37b1=""><div class="content" data-v-7a7a37b1=""><grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none;" class="cGcvT"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none;" class="cGcvT"></grammarly-extension><div class="header" data-v-48a13218="" data-v-7a7a37b1=""><div class="header-content" data-v-48a13218=""><a href="#" class="header-content__item d-sm-none" data-v-48a13218=""><i class="icon icon-star" data-v-48a13218=""></i><span data-v-48a13218="">САСКЕ ВЕРНИСЬ В КОНОХУ</span></a><a href="#" class="header-content__item" data-v-48a13218=""><i class="icon icon-star" data-v-48a13218=""></i><span data-v-48a13218="">25</span></a><a href="#" class="header-content__item" data-v-48a13218=""><i class="icon icon-heart" data-v-48a13218=""></i><span data-v-48a13218="">999.2k</span></a><a href="#" class="header-content__item" data-v-48a13218=""><i class="icon icon-pet" data-v-48a13218=""></i><span data-v-48a13218="">999.9k</span></a><a href="#" class="header-content__item" data-v-48a13218=""><i class="icon icon-silver" data-v-48a13218=""></i><span data-v-48a13218="">999.9k</span></a><a href="#" class="header-content__item" data-v-48a13218=""><i class="icon icon-crystals" data-v-48a13218=""></i><span data-v-48a13218="">999.9k</span></a><a href="#" class="header-content__item" data-v-48a13218=""><i class="icon icon-gold" data-v-48a13218=""></i><span data-v-48a13218="">999.9k</span></a><a href="#" class="header-content__item" data-v-48a13218=""><i class="icon icon-energy" data-v-48a13218=""></i><span data-v-48a13218="">100</span></a></div></div><div class="wrapper" data-v-7a7a37b1=""><!--v-if--><div class="home-header" data-v-c808bbb9="" data-v-7a7a37b1=""><div class="game-welcome" data-v-c808bbb9=""><h2 class="game-welcome__heading" data-v-c808bbb9="" style="
+    margin: 0;
+">Добрый вечер!</h2><div class="game-welcome__subheading" data-v-c808bbb9="">Рядом с тобой 13000 героев</div></div><div class="game-welcome__quests" data-v-c808bbb9=""><i class="icon game-welcome__quests_icon" data-v-c808bbb9="" style="background-image: url(&quot;/src/assets/images/inventory/17.png&quot;);"></i><div class="icon__counter" data-v-c808bbb9="">+5</div></div></div><div class="main-manu mt5" data-v-0abd89e9="" data-v-7a7a37b1=""><div class="main-menu__nickname" data-v-0abd89e9="">Дикий Ёж</div><div class="main-menu__container" data-v-0abd89e9=""><div class="main-menu__column" data-v-0abd89e9=""><a href="#" class="main-menu__item" data-v-0abd89e9=""><i class="icon main-menu__item__icon" data-v-0abd89e9="" style="background-image: url(&quot;/src/assets/images/main/9.png&quot;);"></i><div class="main-menu__item-title" data-v-0abd89e9="">Сумка</div></a><a href="#" class="main-menu__item" data-v-0abd89e9=""><i class="icon main-menu__item__icon" data-v-0abd89e9="" style="background-image: url(&quot;/src/assets/images/main/10.png&quot;);"></i><div class="main-menu__item-title" data-v-0abd89e9="">Казарма</div></a><a href="#" class="main-menu__item" data-v-0abd89e9=""><i class="icon main-menu__item__icon" data-v-0abd89e9="" style="background-image: url(&quot;/src/assets/images/main/11.png&quot;);"></i><div class="main-menu__item-title" data-v-0abd89e9="">Город</div></a><a href="#" class="main-menu__item" data-v-0abd89e9=""><i class="icon main-menu__item__icon" data-v-0abd89e9="" style="background-image: url(&quot;/src/assets/images/main/12.png&quot;);"></i><div class="main-menu__item-title" data-v-0abd89e9="">Квесты</div></a></div><div class="main-menu__avatar" data-v-0abd89e9=""><div class="main-menu__avatar" data-v-0abd89e9="" style="
+    /* box-shadow: 1px 1px 8px 2px #8d2424; */
+"><img src="/src/assets/images/avatar.png" alt="" data-v-0abd89e9="" style="
+    box-shadow: 0px 0px 5px #2d1120;
+"></div></div><div class="main-menu__column" data-v-0abd89e9=""><a href="#" class="main-menu__item" data-v-0abd89e9=""><i class="icon main-menu__item__icon" data-v-0abd89e9="" style="background-image: url(&quot;/src/assets/images/main/5.png&quot;);"></i><div class="main-menu__item-title" data-v-0abd89e9="">Сумка</div></a><a href="#" class="main-menu__item" data-v-0abd89e9=""><i class="icon main-menu__item__icon" data-v-0abd89e9="" style="background-image: url(&quot;/src/assets/images/main/6.png&quot;);"></i><div class="main-menu__item-title" data-v-0abd89e9="">Казарма</div></a><a href="#" class="main-menu__item" data-v-0abd89e9=""><i class="icon main-menu__item__icon" data-v-0abd89e9="" style="background-image: url(&quot;/src/assets/images/main/7.png&quot;);"></i><div class="main-menu__item-title" data-v-0abd89e9="">Город</div></a><a href="#" class="main-menu__item" data-v-0abd89e9=""><i class="icon main-menu__item__icon" data-v-0abd89e9="" style="background-image: url(&quot;/src/assets/images/main/8.png&quot;);"></i><div class="main-menu__item-title" data-v-0abd89e9="">Квесты</div></a></div></div></div><div class="profile-avatar__container mt5" data-v-efc183d3="" data-v-7a7a37b1="" style="padding-top: 40px;"><div class="profile__avatar" data-v-efc183d3=""><img src="/src/assets/images/avatar.png" alt="Image: Main avatar image" data-v-efc183d3=""></div><div class="profile__avatar" data-v-efc183d3=""><img src="/src/assets/images/pet.png" alt="Image: Pet avatar image" data-v-efc183d3=""></div></div><div class="profile-items mt5" data-v-01393d74="" data-v-7a7a37b1=""><div class="profile-items__container" data-v-01393d74=""><div class="profile-items__row" data-v-01393d74=""><div class="profile-items__item" data-v-01393d74=""><i class="icon profile-items__item__icon" data-v-01393d74="" style="background-image: url(&quot;/src/assets/images/inventory/1.png&quot;);"></i><div class="icon__counter profile__item__counter" data-v-01393d74="">+5</div></div><div class="profile-items__item" data-v-01393d74=""><i class="icon profile-items__item__icon" data-v-01393d74="" style="background-image: url(&quot;/src/assets/images/inventory/2.png&quot;);"></i><div class="icon__counter profile__item__counter" data-v-01393d74="">+5</div></div><div class="profile-items__item" data-v-01393d74=""><i class="icon profile-items__item__icon" data-v-01393d74="" style="background-image: url(&quot;/src/assets/images/inventory/3.png&quot;);"></i><div class="icon__counter" data-v-01393d74="">+5</div></div><div class="profile-items__item" data-v-01393d74=""><i class="icon profile-items__item__icon" data-v-01393d74="" style="background-image: url(&quot;/src/assets/images/inventory/4.png&quot;);"></i><div class="icon__counter profile__item__counter" data-v-01393d74="">+5</div></div></div><div class="profile-items__row" data-v-01393d74=""><div class="profile-items__item" data-v-01393d74=""><i class="icon profile-items__item__icon" data-v-01393d74="" style="background-image: url(&quot;/src/assets/images/inventory/5.png&quot;);"></i><div class="icon__counter profile__item__counter" data-v-01393d74="">+5</div></div><div class="profile-items__item" data-v-01393d74=""><i class="icon profile-items__item__icon" data-v-01393d74="" style="background-image: url(&quot;/src/assets/images/inventory/6.png&quot;);"></i><div class="icon__counter profile__item__counter" data-v-01393d74="">+99</div></div><div class="profile-items__item" data-v-01393d74=""><i class="icon profile-items__item__icon" data-v-01393d74="" style="background-image: url(&quot;/src/assets/images/inventory/7.png&quot;);"></i><div class="icon__counter profile__item__counter" data-v-01393d74="">+5</div></div><div class="profile-items__item" data-v-01393d74=""><i class="icon profile-items__item__icon" data-v-01393d74="" style="background-image: url(&quot;/src/assets/images/inventory/8.png&quot;);"></i><div class="icon__counter profile__item__counter" data-v-01393d74="">+5</div></div></div></div></div><div class="characteristic__container mt5" data-v-0970043c="" data-v-7a7a37b1=""><div class="characteristic__item" data-v-0970043c=""><i class="icon icon-star characteristic__item__icon" data-v-0970043c=""></i><div class="characteristic__item-content" data-v-0970043c=""><span class="characteristic__item-title" data-v-0970043c="">Уровень:</span><span class="characteristic__item-value" data-v-0970043c="">25</span></div></div><div class="characteristic__item" data-v-0970043c=""><i class="icon icon-star characteristic__item__icon" data-v-0970043c=""></i><div class="characteristic__item-content" data-v-0970043c=""><span class="characteristic__item-title" data-v-0970043c="">Клан:</span><span class="characteristic__item-value text-color__blue" data-v-0970043c="">TRIADA</span></div></div><div class="characteristic__item" data-v-0970043c=""><i class="icon icon-star characteristic__item__icon" data-v-0970043c=""></i><div class="characteristic__item-content" data-v-0970043c=""><span class="characteristic__item-title" data-v-0970043c="">Слава:</span><span class="characteristic__item-value" data-v-0970043c="">45000</span></div></div><div class="characteristic__item" data-v-0970043c=""><i class="icon icon-star characteristic__item__icon" data-v-0970043c=""></i><div class="characteristic__item-content" data-v-0970043c=""><span class="characteristic__item-title" data-v-0970043c="">Сила:</span><span class="characteristic__item-value" data-v-0970043c="">100</span></div></div><div class="characteristic__item" data-v-0970043c=""><i class="icon icon-star characteristic__item__icon" data-v-0970043c=""></i><div class="characteristic__item-content" data-v-0970043c=""><span class="characteristic__item-title" data-v-0970043c="">Ловкость:</span><span class="characteristic__item-value" data-v-0970043c="">100</span></div></div><div class="characteristic__item" data-v-0970043c=""><i class="icon icon-star characteristic__item__icon" data-v-0970043c=""></i><div class="characteristic__item-content" data-v-0970043c=""><span class="characteristic__item-title" data-v-0970043c="">Мастерство:</span><span class="characteristic__item-value" data-v-0970043c="">100</span></div></div><div class="characteristic__item" data-v-0970043c=""><i class="icon icon-star characteristic__item__icon" data-v-0970043c=""></i><div class="characteristic__item-content" data-v-0970043c=""><span class="characteristic__item-title" data-v-0970043c="">Защита:</span><span class="characteristic__item-value" data-v-0970043c="">100</span></div></div><div class="characteristic__item" data-v-0970043c=""><i class="icon icon-star characteristic__item__icon" data-v-0970043c=""></i><div class="characteristic__item-content" data-v-0970043c=""><span class="characteristic__item-title" data-v-0970043c="">Живучесть:</span><span class="characteristic__item-value" data-v-0970043c="">100</span></div></div></div><div class="app-heading mt5" data-v-faf9ed17="" data-v-7a7a37b1=""><div class="app-heading__container" data-v-faf9ed17=""><button class="app-heading__btn app-heading__back-btn" data-v-faf9ed17=""><img src="/src/assets/images/icons/arrow.svg" alt="Back arrow icon" data-v-faf9ed17=""></button><h2 class="app-heading__title" data-v-faf9ed17="">Заголовок</h2></div><div data-v-faf9ed17=""><button class="app-heading__btn app-heading__reload-btn" data-v-faf9ed17=""><img src="/src/assets/images/icons/reload.svg" alt="Reload icon" data-v-faf9ed17=""></button></div></div><div class="header-separator mt5" data-v-f9a28ae1="" data-v-7a7a37b1=""><div class="header-separator__container" data-v-f9a28ae1=""><h2 class="header-separator__label" data-v-f9a28ae1="">Навигация</h2></div></div><div data-v-ec84e734="" data-v-7a7a37b1=""><a href="#" class="nav-link" data-v-ec84e734=""><i class="icon icon-hero nav-link__icon" data-v-ec84e734=""></i><div class="settings__details" data-v-ec84e734=""><div class="nav-link__text" data-v-ec84e734="">Настройки</div></div></a><a href="#" class="nav-link" data-v-ec84e734=""><i class="icon icon-settings nav-link__icon" data-v-ec84e734=""></i><div class="settings__details" data-v-ec84e734=""><div class="nav-link__text" data-v-ec84e734="">История</div></div></a></div><div class="header-separator mt5" data-v-f9a28ae1="" data-v-7a7a37b1=""><div class="header-separator__container" data-v-f9a28ae1=""><h2 class="header-separator__label" data-v-f9a28ae1="">Магазин</h2></div></div><div data-v-b8b26d1b="" data-v-7a7a37b1=""><div class="card shop-card" data-v-b8b26d1b=""><i class="icon shop-card__icon" data-v-b8b26d1b="" style="background-image: url(&quot;/src/assets/images/inventory/15.png&quot;);"></i><div class="shop-card__details" data-v-b8b26d1b=""><div class="shop-card__title" data-v-b8b26d1b="">Зелье</div><span class="shop-card__description" data-v-b8b26d1b=""> Если нужно восстановить здоровье себе или своему зверю... </span></div></div><div class="card shop-card" data-v-b8b26d1b=""><i class="icon shop-card__icon" data-v-b8b26d1b="" style="background-image: url(&quot;/src/assets/images/inventory/16.png&quot;);"></i><div class="shop-card__details" data-v-b8b26d1b=""><div class="shop-card__title" data-v-b8b26d1b="">Зелье</div><span class="shop-card__description" data-v-b8b26d1b=""> Если нужно восстановить здоровье себе или своему зверю... </span></div></div></div><div class="mt5" data-v-16fcdbbf="" data-v-7a7a37b1=""><div class="card dialog-card" data-v-16fcdbbf=""><i class="icon dialog-card__image" data-v-16fcdbbf="" style="background-image: url(&quot;/src/assets/images/avatars/23.png&quot;);"></i><div class="dialog-card__details" data-v-16fcdbbf=""><div class="dialog-card__title-content" data-v-16fcdbbf=""><div class="dialog-card__title" data-v-16fcdbbf=""> Presbiopic <div class="dialog-card__online-indicator" data-v-16fcdbbf=""></div></div><div class="dialog-card__date" data-v-16fcdbbf="">09 авг. 01:39</div></div><div class="dialog-card__description" data-v-16fcdbbf=""> Ты атаковал IMMERSION и забрал 124520 серебра, 1 славы </div></div></div><div class="card dialog-card" data-v-16fcdbbf=""><i class="icon dialog-card__image" data-v-16fcdbbf="" style="background-image: url(&quot;/src/assets/images/avatars/24.png&quot;);"></i><div class="dialog-card__details" data-v-16fcdbbf=""><div class="dialog-card__title-content" data-v-16fcdbbf=""><div class="dialog-card__title" data-v-16fcdbbf=""> Presbiopic <div class="dialog-card__online-indicator" data-v-16fcdbbf=""></div></div><div class="dialog-card__date" data-v-16fcdbbf="">09 авг. 01:39</div></div><div class="dialog-card__description" data-v-16fcdbbf=""> Так, беляш </div></div></div></div><div class="mt5" data-v-7a7a37b1=""><form action="#" class="dialog-tools__form"><textarea placeholder="Введите сообщение..." spellcheck="false"></textarea></form><label for="name">Name (4 to 8 characters):</label><input type="text" id="name" name="name"></div><button class="button button-orange" style="margin-top: 15px;">Купить</button><button class="button button-orange" style="margin-top: 15px;">Купить</button><button class="button button-grey" style="margin-top: 15px;">Купить</button><div class="pagination mt5" data-v-cccf29d6="" data-v-7a7a37b1=""><button class="pagination__button pagination__prev-button" data-v-cccf29d6="">1</button><button class="pagination__button pagination__prev-button" data-v-cccf29d6="">2</button><button class="pagination__button pagination__active-button" data-v-cccf29d6="">3</button><button class="pagination__button pagination__next-button" data-v-cccf29d6="">4</button><button class="pagination__button pagination__next-button" data-v-cccf29d6="">5</button></div></div><div class="footer" data-v-6704560a="" data-v-7a7a37b1=""><div class="footer-content" data-v-6704560a=""><a href="#" class="footer-content__item" data-v-6704560a=""><div class="footer-content__item__icon" data-v-6704560a=""><i class="icon icon-home" data-v-6704560a=""></i></div><div class="footer-content__item__label" data-v-6704560a="">Домой</div></a><a href="#" class="footer-content__item" data-v-6704560a=""><div class="footer-content__item__icon" data-v-6704560a=""><i class="icon icon-hero" data-v-6704560a=""></i></div><div class="footer-content__item__label" data-v-6704560a="">Герой</div></a><a href="#" class="footer-content__item" data-v-6704560a=""><div class="footer-content__item__icon" data-v-6704560a=""><i class="icon icon-clan" data-v-6704560a=""></i></div><div class="footer-content__item__label" data-v-6704560a="">Клан</div></a><a href="#" class="footer-content__item" data-v-6704560a=""><div class="footer-content__item__icon" data-v-6704560a=""><i class="icon icon-forum" data-v-6704560a=""></i></div><div class="footer-content__item__label" data-v-6704560a="">Форум</div></a><a href="#" class="footer-content__item" data-v-6704560a=""><div class="footer-content__item__icon" data-v-6704560a=""><i class="icon icon-chat" data-v-6704560a=""></i></div><div class="footer-content__item__label" data-v-6704560a="">Чат</div></a><a href="#" class="footer-content__item" data-v-6704560a=""><div class="footer-content__item__icon" data-v-6704560a=""><i class="icon icon-settings" data-v-6704560a=""></i></div><div class="footer-content__item__label" data-v-6704560a="">Настройки</div></a></div></div></div></div></div>
+    <script type="module" src="/src/main.ts"></script>
+  
+
+</body><app-content ng-version="14.2.0"></app-content><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration><grammarly-mirror data-grammarly-shadow-root="true" class="cGcvT"></grammarly-mirror></html>
