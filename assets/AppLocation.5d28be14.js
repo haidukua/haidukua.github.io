@@ -1,1 +1,0 @@
-import{d as o,o as t,f as a,b as c,_ as s}from"./index.9b2ae1d2.js";const n={class:"location-container"},_=["src"],i=o({__name:"AppLocation",props:{image:{type:String,required:!0}},setup(e){return(p,r)=>(t(),a("div",n,[c("img",{class:"location-image",src:e.image,alt:"location"},null,8,_)]))}});const l=s(i,[["__scopeId","data-v-134fead4"]]);export{l as A};
