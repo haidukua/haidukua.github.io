@@ -1,0 +1,1 @@
+import{d as s,f as t,j as n,c,o as e,k as d}from"./index.4f6fd95b.js";const r={class:"game-body"},_=s({__name:"AppBody",props:{isLoaded:{type:Boolean,default:!0}},setup(o){return(a,l)=>(e(),t("div",r,[o.isLoaded?n(a.$slots,"default",{key:0}):(e(),c(d,{key:1}))]))}});export{_};
